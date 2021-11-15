@@ -1,0 +1,27 @@
+import 'dart:io';
+
+import 'package:flutter/foundation.dart';
+import 'package:image_picker/image_picker.dart';
+
+class Place{
+  final String id;
+  final String title;
+  final PlaceLocation? location;
+  final File image;
+
+  Place(this.id, this.title, this.location, this.image);
+}
+
+class PlaceLocation{
+  final double latitude;
+  final double longitude;
+  final String address;
+
+
+  PlaceLocation({
+    this.latitude = 0.0,
+    this.longitude = 0.0,
+    this.address = '',
+});
+
+}
